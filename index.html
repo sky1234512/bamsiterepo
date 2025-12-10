@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sky's BamBaeYoh Fan Website</title>
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0125/8261/7145/files/BAMBAEYOH_PLUSH_TOY-SV3-P-1_1000x.png.webp?v=1723044848" type="image/jpeg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+    :root{--pink:#ff69b4;--deep-pink:#C71585;--glass:rgba(255,255,255,0.10);--glass-dark:rgba(0,0,0,0.14)}
+    html,body{height:100%;margin:0}
+    body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background-image:url('https://bam.uwu.ai/assets/videos/bg.mp4.jpg?v=07d40e33');background-size:cover;background-attachment:fixed;background-repeat:no-repeat;color:#fff;min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.6}
+    .site-header{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:18px;padding:18px 28px;margin:0 auto;max-width:1200px;background:var(--glass);border-radius:0 0 20px 20px;backdrop-filter:blur(14px);box-shadow:0 6px 24px rgba(199,21,133,0.08);border-bottom:2px solid rgba(255,105,180,0.18)}
+    .site-logo{height:56px;border-radius:12px;background:#fff;display:block;box-shadow:0 6px 18px rgba(199,21,133,0.08);transition:transform .18s,box-shadow .18s;cursor:pointer}
+    .site-logo:hover{transform:scale(1.06) rotate(-1.5deg);box-shadow:0 10px 30px rgba(255,105,180,0.12)}
+    .site-title{font-weight:900;font-size:1.6rem;color:var(--pink);text-transform:uppercase;letter-spacing:1px;margin-left:10px}
+    .site-nav{margin-left:auto;display:flex;gap:12px}
+    .site-nav a{padding:8px 16px;border-radius:12px;background:linear-gradient(90deg,var(--pink),var(--deep-pink));color:#fff;font-weight:800;text-decoration:none;box-shadow:0 4px 12px rgba(199,21,133,0.07);transition:all .18s}
+    .site-nav a:hover{background:#fff;color:var(--deep-pink);box-shadow:0 8px 28px rgba(255,105,180,0.12)}
+    .container{max-width:1100px;margin:32px auto;padding:34px;background:var(--glass-dark);border-radius:18px;backdrop-filter:blur(10px);box-shadow:0 6px 30px rgba(199,21,133,0.06)}
+    h1{color:var(--pink);margin:18px 0 12px;font-size:1.6rem;font-weight:900;letter-spacing:.8px;text-transform:uppercase}
+    .image_carousel{display:flex;gap:16px;overflow-x:auto;padding:12px 0;scroll-behavior:smooth}
+    .image_carousel img{flex-shrink:0;border-radius:12px;display:block;transition:transform .2s,box-shadow .2s;box-shadow:0 6px 18px rgba(199,21,133,0.06)}
+    .image_carousel img:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 12px 40px rgba(255,105,180,0.12)}
+    .image_carousel::-webkit-scrollbar{height:8px}
+    .image_carousel::-webkit-scrollbar-thumb{background:var(--pink);border-radius:8px}
+    .img-hover-wrap{position:relative;display:inline-block}
+    .img-tooltip{position:absolute;left:50%;top:-36px;transform:translateX(-50%);background:linear-gradient(90deg,var(--pink),var(--deep-pink));padding:6px 14px;border-radius:8px;font-weight:700;color:#fff;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .18s,top .18s;box-shadow:0 6px 20px rgba(199,21,133,0.08)}
+    .img-hover-wrap:hover .img-tooltip{opacity:1;top:0px}
+    .bam-button{display:inline-block;background:linear-gradient(90deg,var(--pink),var(--deep-pink));color:#fff;padding:12px 28px;border-radius:999px;border:none;font-weight:900;text-transform:uppercase;letter-spacing:.8px;cursor:pointer;box-shadow:0 6px 24px rgba(199,21,133,0.06);transition:transform .14s,box-shadow .14s}
+    .bam-button:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(255,105,180,0.12)}
+    .footer{margin-top:20px;text-align:center;color:#ffdfe9}
+    a{color:var(--pink);font-weight:700}
+    @media(max-width:700px){.site-title{font-size:1.1rem}.container{margin:18px 16px;padding:18px}}
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <img id="bam-doughboi-logo" class="site-logo" src="https://cdn.shopify.com/s/files/1/0125/8261/7145/files/BamBaeYoh_Doughboi_Plushie-SV2-P-1_1000x.png.webp?v=1764327827" alt="Bam Doughboi plush">
+    <div class="site-title">Sky's BamBaeYoh Fan Site</div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="https://bam.uwu.ai" target="_blank" rel="noopener noreferrer">Official</a>
+      <a href="#merch">Merch</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Welcome to Sky's BamBaeYoh Fan Website!</h1>
+      <img src="https://bam.uwu.ai/assets/images/image01.png?v=07d40e33" alt="BamBaeYoh banner" style="max-height:230px;object-fit:cover">
+
+      <h1 id="gallery">See My Favorite YouTuber and His Merch!</h1>
+      <div class="image_carousel" aria-label="Fan art carousel">
+        <span class="img-hover-wrap">
+          <img src="https://art.ngfiles.com/images/2661000/2661459_imcarbrrrrrrrr_bambaeyoh-commission.png?f1659455439" width="250" alt="Fan art commission">
+          <span class="img-tooltip">Fan art commission</span>
+        </span>
+        <span class="img-hover-wrap">
+          <img src="https://media.tenor.com/wlS_JHnyck0AAAAM/shorts-wars-court-case.gif" width="236" alt="Shorts wars court case">
+          <span class="img-tooltip">Shorts wars court case</span>
+        </span>
+        <span class="img-hover-wrap">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9B-AwvyxMmM5moUbdyjiPh_74PkSF59rO7A&s" width="220" alt="Cat ear Bam">
+          <span class="img-tooltip">Cat ear Bam</span>
+        </span>
+      </div>
+
+      <div class="image_carousel" aria-label="Merch carousel">
+        <span class="img-hover-wrap">
+          <img src="https://cdn.shopify.com/s/files/1/0125/8261/7145/files/BamBaeYoh_Doughboi_Plushie-SV2-P-1_1000x.png.webp?v=1764327827" width="204" alt="Bam's Doughboi plush">
+          <span class="img-tooltip">Bam's Doughboi plush</span>
+        </span>
+        <span class="img-hover-wrap">
+          <img src="https://cdn.shopify.com/s/files/1/0125/8261/7145/files/BAMBAEYOH_PLUSH_TOY-SV3-P-1_1000x.png.webp?v=1723044848" width="204" alt="Bam's old avatar plush">
+          <span class="img-tooltip">Bam's old avatar plush</span>
+        </span>
+      </div>
+
+      <div class="image_carousel" aria-label="Icon">
+        <span class="img-hover-wrap">
+          <img src="https://cdnb.artstation.com/p/assets/covers/images/078/968/477/large/avocadona-avocadona-bam-icon.jpg?1723580243" width="204" alt="Bam's avatar">
+          <span class="img-tooltip">Bam's avatar</span>
+        </span>
+      </div>
+
+      <h1 id="merch">Where you can find BamBaeYoh!</h1>
+      <a href="https://bam.uwu.ai" target="_blank" rel="noopener noreferrer"><button class="bam-button">BamBaeYoh's Socials!</button></a>
+
+      <p class="footer">Built as a fan project — Sky</p>
+    </div>
+  </main>
+
+  <!-- Change the audio URL in the src attribute below to play a different sound -->
+  <audio id="bam-audio" src="https://www.myinstants.com/media/sounds/meow-1.mp3" preload="auto"></audio>
+  <script>
+    (function(){
+      const logo = document.getElementById('bam-doughboi-logo');
+      const audio = document.getElementById('bam-audio');
+      if(logo && audio){
+        logo.addEventListener('click', ()=>{
+          audio.currentTime = 0;
+          audio.play().catch(()=>{/* autoplay may be blocked until user interacts with page */});
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
