@@ -8,11 +8,13 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
     :root{--pink:#ff69b4;--deep-pink:#C71585;--glass:rgba(255,255,255,0.10);--glass-dark:rgba(0,0,0,0.14)}
+    @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
     html,body{height:100%;margin:0}
     body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background-image:url('https://bam.uwu.ai/assets/videos/bg.mp4.jpg?v=07d40e33');background-size:cover;background-attachment:fixed;background-repeat:no-repeat;color:#fff;min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.6}
     .site-header{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:18px;padding:18px 28px;margin:0 auto;max-width:1200px;background:var(--glass);border-radius:0 0 20px 20px;backdrop-filter:blur(14px);box-shadow:0 6px 24px rgba(199,21,133,0.08);border-bottom:2px solid rgba(255,105,180,0.18)}
     .site-logo{height:56px;border-radius:12px;background:#fff;display:block;box-shadow:0 6px 18px rgba(199,21,133,0.08);transition:transform .18s,box-shadow .18s;cursor:pointer}
-    .site-logo:hover{transform:scale(1.06) rotate(-1.5deg);box-shadow:0 10px 30px rgba(255,105,180,0.12)}
+    .site-logo:hover{transform:scale(1.06);box-shadow:0 10px 30px rgba(255,105,180,0.12);animation:spin 0.8s ease-in-out infinite}
+    .site-logo.spin-once{animation:spin 0.6s ease-in-out}
     .site-title{font-weight:900;font-size:1.6rem;color:var(--pink);text-transform:uppercase;letter-spacing:1px;margin-left:10px}
     .site-nav{margin-left:auto;display:flex;gap:12px}
     .site-nav a{padding:8px 16px;border-radius:12px;background:linear-gradient(90deg,var(--pink),var(--deep-pink));color:#fff;font-weight:800;text-decoration:none;box-shadow:0 4px 12px rgba(199,21,133,0.07);transition:all .18s}
@@ -101,6 +103,8 @@
         logo.addEventListener('click', ()=>{
           audio.currentTime = 0;
           audio.play().catch(()=>{/* autoplay may be blocked until user interacts with page */});
+          logo.classList.add('spin-once');
+          setTimeout(()=>logo.classList.remove('spin-once'), 600);
         });
       }
     })();
