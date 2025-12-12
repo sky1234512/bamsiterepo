@@ -104,7 +104,6 @@
           audio.currentTime = 0;
           audio.play().catch(()=>{/* autoplay may be blocked until user interacts with page */});
           logo.classList.add('spin-once');
-          setTimeout(()=>logo.classList.remove('spin-once'), 600);
         });
       }
     })();
